@@ -29,24 +29,17 @@ namespace Market_Otomasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GirisEkrani));
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnPerakendeSatis = new System.Windows.Forms.Button();
+            this.btnStokIslemleri = new System.Windows.Forms.Button();
+            this.btnBorclar = new System.Windows.Forms.Button();
+            this.btnSatisListesi = new System.Windows.Forms.Button();
+            this.btnRaporlar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // pictureBox1
             // 
@@ -85,65 +78,70 @@ namespace Market_Otomasyonu
             this.label2.TabIndex = 5;
             this.label2.Text = "MARKETIMIZE";
             // 
-            // button1
+            // btnPerakendeSatis
             // 
-            this.button1.BackColor = System.Drawing.Color.SandyBrown;
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.DarkRed;
-            this.button1.Location = new System.Drawing.Point(259, 192);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 45);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Perakende Satış";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnPerakendeSatis.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnPerakendeSatis.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPerakendeSatis.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnPerakendeSatis.Location = new System.Drawing.Point(259, 192);
+            this.btnPerakendeSatis.Name = "btnPerakendeSatis";
+            this.btnPerakendeSatis.Size = new System.Drawing.Size(153, 45);
+            this.btnPerakendeSatis.TabIndex = 6;
+            this.btnPerakendeSatis.Text = "Perakende Satış";
+            this.btnPerakendeSatis.UseVisualStyleBackColor = false;
+            this.btnPerakendeSatis.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnStokIslemleri
             // 
-            this.button2.BackColor = System.Drawing.Color.SandyBrown;
-            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.ForeColor = System.Drawing.Color.DarkRed;
-            this.button2.Location = new System.Drawing.Point(259, 243);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(153, 45);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Stok İşlemleri";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnStokIslemleri.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnStokIslemleri.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnStokIslemleri.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnStokIslemleri.Location = new System.Drawing.Point(259, 243);
+            this.btnStokIslemleri.Name = "btnStokIslemleri";
+            this.btnStokIslemleri.Size = new System.Drawing.Size(153, 45);
+            this.btnStokIslemleri.TabIndex = 7;
+            this.btnStokIslemleri.Text = "Stok İşlemleri";
+            this.btnStokIslemleri.UseVisualStyleBackColor = false;
+            this.btnStokIslemleri.Click += new System.EventHandler(this.btnStokIslemleri_Click);
             // 
-            // button3
+            // btnBorclar
             // 
-            this.button3.BackColor = System.Drawing.Color.SandyBrown;
-            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.ForeColor = System.Drawing.Color.DarkRed;
-            this.button3.Location = new System.Drawing.Point(259, 294);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(153, 45);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Borçlar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnBorclar.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnBorclar.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBorclar.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnBorclar.Location = new System.Drawing.Point(259, 294);
+            this.btnBorclar.Name = "btnBorclar";
+            this.btnBorclar.Size = new System.Drawing.Size(153, 45);
+            this.btnBorclar.TabIndex = 8;
+            this.btnBorclar.Text = "Borçlar";
+            this.btnBorclar.UseVisualStyleBackColor = false;
+            this.btnBorclar.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btnSatisListesi
             // 
-            this.button4.BackColor = System.Drawing.Color.SandyBrown;
-            this.button4.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.ForeColor = System.Drawing.Color.DarkRed;
-            this.button4.Location = new System.Drawing.Point(259, 345);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(153, 45);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Satış Listesi";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnSatisListesi.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnSatisListesi.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSatisListesi.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnSatisListesi.Location = new System.Drawing.Point(259, 345);
+            this.btnSatisListesi.Name = "btnSatisListesi";
+            this.btnSatisListesi.Size = new System.Drawing.Size(153, 45);
+            this.btnSatisListesi.TabIndex = 9;
+            this.btnSatisListesi.Text = "Satış Listesi";
+            this.btnSatisListesi.UseVisualStyleBackColor = false;
+            this.btnSatisListesi.Click += new System.EventHandler(this.btnSatisListesi_Click);
             // 
-            // button5
+            // btnRaporlar
             // 
-            this.button5.BackColor = System.Drawing.Color.SandyBrown;
-            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.ForeColor = System.Drawing.Color.DarkRed;
-            this.button5.Location = new System.Drawing.Point(259, 396);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(153, 41);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Raporlar";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnRaporlar.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnRaporlar.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRaporlar.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnRaporlar.Location = new System.Drawing.Point(259, 396);
+            this.btnRaporlar.Name = "btnRaporlar";
+            this.btnRaporlar.Size = new System.Drawing.Size(153, 41);
+            this.btnRaporlar.TabIndex = 10;
+            this.btnRaporlar.Text = "Raporlar";
+            this.btnRaporlar.UseVisualStyleBackColor = false;
+            this.btnRaporlar.Click += new System.EventHandler(this.btnRaporlar_Click);
             // 
             // GirisEkrani
             // 
@@ -151,11 +149,11 @@ namespace Market_Otomasyonu
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(682, 455);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRaporlar);
+            this.Controls.Add(this.btnSatisListesi);
+            this.Controls.Add(this.btnBorclar);
+            this.Controls.Add(this.btnStokIslemleri);
+            this.Controls.Add(this.btnPerakendeSatis);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -170,16 +168,14 @@ namespace Market_Otomasyonu
         }
 
         #endregion
-
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnPerakendeSatis;
+        private System.Windows.Forms.Button btnStokIslemleri;
+        private System.Windows.Forms.Button btnBorclar;
+        private System.Windows.Forms.Button btnSatisListesi;
+        private System.Windows.Forms.Button btnRaporlar;
     }
 }
 

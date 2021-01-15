@@ -18,12 +18,7 @@ namespace Market_Otomasyonu
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            Context c = new Context();
-            c.Database.Create();
-
-        }
+        private void Form1_Load(object sender, EventArgs e) => new Context().Database.Create();
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -33,6 +28,33 @@ namespace Market_Otomasyonu
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           MessageBox.Show("Uygulamamız yapım aşamasındadır.");
+
+        }
+
+        private void btnStokIslemleri_Click(object sender, EventArgs e)
+        {
+           MessageBox.Show("Uygulamamız yapım aşamasındadır.");
+        }
+       
+        private void button3_Click(object sender, EventArgs e)
+        {  
+
+        }
+
+        private void btnSatisListesi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void btnRaporlar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Uygulamamız yapım aşamasındadır.");
         }
     }
 }
